@@ -2,11 +2,14 @@
  <html>
  <head>
     <title>SHIFTA PORTFOLIO'S</title>
- 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
     <style>
         body {
             margin: 0;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: lightpink;
+            font-family: 'Poppins', sans-serif;
+            background-color: lightpink;
         }
 
         header {
@@ -15,6 +18,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header-text h1 {
+             margin: 0;
+             color: #faf4d4;
+            }
+
+        .header-image .foto-header {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         .logo {
@@ -35,8 +56,8 @@
 
         .hero {
             text-align: center;
-            padding: 80px 20px;
-            background-color: #eef2f7;
+            padding: 100px 20px;
+            background-color: aliceblue;
         }
 
         .hero h1 {
@@ -89,29 +110,37 @@
 <body>
 
     <header>
-        <div class="logo">This is Me!!!!</div>
+        <div class="header-content">
+            <div class="logo">This is me!!</div>
+            <div class="header-image">
+                <img src="portfolio/img/header-image.jpeg" class="foto-header">
+            </div>
+        </div>
 
         <nav>
-            <a href="#" class="activeHome">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
+            <a href="#" class="activeHome"><b>Home</b></a>
+            <a href="#"><b>About</b></a>
+            <a href="#"><b>Projects</b></a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <h1>WELCOME TO MY PORTFOLIO</h1>
-        <p>This is a showcase of my work and skills.</p>
-        <a href="#" class="btn">view my work</a>
+        <p><i>This is a showcase of my work and skills.</i></p>
     </section>
 
-    <section class="cards">
+    <section 
+     class="cards">
         <div class="card">
-            <h2>my projects</h2>
+            <h2>MY PROJECT</h2>
             <p>Here are some of my recent projects and accomplishments.</p>
         </div>
 
         <div class="card">
-            <h2>my experience</h2>
-            <p>I have experience in web development, design, and project management.</p>
+            <h2>MY EXPERIENCE</h2>
+            <p>Detail of my professional experience in web development, design, and project management.</p>
         </div>
     </section>
+
+
+    
